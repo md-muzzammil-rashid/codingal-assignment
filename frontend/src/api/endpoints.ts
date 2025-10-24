@@ -1,4 +1,5 @@
-export const API_BASE_URL = 'https://codingal-assignment.onrender.com';
+export const API_BASE_URL = 'http://51.21.201.250:8000';
+// export const API_BASE_URL = 'https://codingal-assignment.onrender.com';
 // export const API_BASE_URL = 'http://localhost:8000';
 export const STUDENT_OVERVIEW = '/api/students/1/overview/';
 export const STUDENT_RECOMMENDATION = '/api/students/1/recommendation/';
