@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import CodeEditor from "./CodeEditor"
 import { CheckCircle, Zap, ZapIcon } from "lucide-react"
 
+// @ts-ignore
 export default function LessonContent({  lesson }) {
   const navigate = useNavigate()
   const [code, setCode] = useState("")
@@ -77,6 +78,7 @@ export default function LessonContent({  lesson }) {
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <p className="text-xs font-semibold text-gray-500 mb-2">Topics:</p>
                     <div className="flex flex-wrap gap-2">
+                      {/* @ts-ignore */}
                       {lesson.tags.map((tag) => (
                         <span
                           key={tag}

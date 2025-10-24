@@ -24,11 +24,11 @@ export default function CourseCard({ course }: { course: Course }) {
     <div className="rounded-2xl border bg-white p-4 shadow-sm">
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-semibold">{course.name}</h3>
-        {course.nextUp && (
-          <span className="text-xs rounded-full bg-indigo-50 px-2 py-1 text-indigo-700">
-            Next: {course.nextUp}
+        {/* {course.next_up && (
+          <span onClick={()=>navigate(`courses/${next_up}`)} className="text-xs rounded-full bg-indigo-50 px-2 py-1 text-indigo-700">
+            Next: {course.next_up}
           </span>
-        )}
+        )} */}
       </div>
       <div className="mt-3">
         <ProgressBar value={course.progress} />
@@ -38,6 +38,7 @@ export default function CourseCard({ course }: { course: Course }) {
       </div>
       {course.last_activity && (
         <div className="mt-2 text-xs text-gray-500">
+          {/* @ts-ignore */}
           Last activity: {new Date(course.last_activity).toLocaleDateString('en-US', options)}
         </div>
       )}

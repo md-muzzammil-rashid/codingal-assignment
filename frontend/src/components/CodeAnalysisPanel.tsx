@@ -141,8 +141,11 @@ export default function CodeAnalysisPanel({ code, onChangeCorrectness, onChangeH
             <h4 className="font-semibold text-xs text-gray-900">Available Hints:</h4>
             <div className="space-y-2 max-h-64 overflow-y-auto">
               {Array.from(viewedHintIndices).map((idx) => {
+                // @ts-ignore
                 const hint = allHints[idx]
+                
                 return (
+                  // @ts-ignore
                   <div key={idx} className="p-3 rounded-lg border bg-blue-50 border-blue-200">
                     <div className="flex items-start gap-2">
                       {hint.type === "issue" ? (

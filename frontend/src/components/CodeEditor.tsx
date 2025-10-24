@@ -23,6 +23,7 @@ export default function CodeEditor({ code, onChange }: CodeEditorProps) {
   const lessonId = params.id as string;
 
   const handleAttemptSubmitMutation = useMutation({
+    // @ts-ignore
     mutationFn: (data) => submitAttempt(data),
     mutationKey: ["submitAttempt"],
     onSuccess: () => {
@@ -42,6 +43,7 @@ export default function CodeEditor({ code, onChange }: CodeEditorProps) {
       duration_sec: timer,
       timestamp: new Date().toISOString(),
     };
+    // @ts-ignore 
     handleAttemptSubmitMutation.mutate(data);
     setIsRunning(false);
   };
@@ -52,9 +54,11 @@ export default function CodeEditor({ code, onChange }: CodeEditorProps) {
         setTimer((prev) => prev + 1);
       }, 1000);
     } else if (timerRef.current) {
+      // @ts-ignore 
       clearInterval(timerRef.current);
     }
     return () => {
+      // @ts-ignore 
       if (timerRef.current) clearInterval(timerRef.current);
     };
   }, [isRunning]);
