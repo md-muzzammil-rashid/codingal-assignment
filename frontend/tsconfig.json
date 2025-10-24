@@ -17,7 +17,8 @@
     "strict": true,
     "types": [
       "vitest",
-      "@testing-library/jest-dom"
+      "@testing-library/jest-dom",
+      "node"
     ]
   },
   "include": [
