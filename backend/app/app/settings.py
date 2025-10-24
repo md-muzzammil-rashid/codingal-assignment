@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!=6_mldmx*l3gz76iny%-1zt26nrb4qo5i#brjpjp#-bxiebeu
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "codingal-assignment.onrender.com/"
+    "codingal-assignment.onrender.com"
 ]
 
 
