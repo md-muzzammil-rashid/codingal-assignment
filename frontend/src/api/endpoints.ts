@@ -1,0 +1,8 @@
+export const API_BASE_URL = 'http://localhost:8000';
+export const STUDENT_OVERVIEW = '/api/students/1/overview/';
+export const STUDENT_RECOMMENDATION = '/api/students/1/recommendation/';
+export const ATTEMPTS = '/api/attempts/'; 
+export const ANALYZE_CODE = '/api/analyze_code/';
+export const COURSE_DETAIL = '/api/courses/';
+export const LESSON_DETAIL = '/api/lesson/';
+export const SUBMIT_ATTEMPT = '/api/attempts/';
